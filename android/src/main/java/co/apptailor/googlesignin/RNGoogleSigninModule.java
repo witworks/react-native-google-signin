@@ -35,7 +35,7 @@ import com.google.android.gms.common.api.Status;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
-
+import android.util.Log;
 
 public class RNGoogleSigninModule extends ReactContextBaseJavaModule implements ActivityEventListener {
     private GoogleApiClient _apiClient;
@@ -54,6 +54,10 @@ public class RNGoogleSigninModule extends ReactContextBaseJavaModule implements 
     public void onActivityResult(int requestCode, int resultCode, Intent intent) {
         if (requestCode == RNGoogleSigninModule.RC_SIGN_IN) {
             GoogleSignInResult result = Auth.GoogleSignInApi.getSignInResultFromIntent(intent);
+            if(result == null){
+                Log.d("RNGoogleSignin","GOOGLE RETURNED NULL");
+                return;
+            }
             handleSignInResult(result, false);
         }
     }
