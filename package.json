@@ -1,11 +1,69 @@
 {
-  "name": "react-native-google-signin",
-  "version": "0.8.1",
-  "description": "Google Signin for your react native applications",
-  "main": "index",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "_args": [
+    [
+      {
+        "raw": "react-native-google-signin@^0.10.0",
+        "scope": null,
+        "escapedName": "react-native-google-signin",
+        "name": "react-native-google-signin",
+        "rawSpec": "^0.10.0",
+        "spec": ">=0.10.0 <0.11.0",
+        "type": "range"
+      },
+      "/home/li8/witworks/phone-apps/BlinkDroid/react"
+    ]
+  ],
+  "_from": "react-native-google-signin@>=0.10.0 <0.11.0",
+  "_id": "react-native-google-signin@0.10.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/react-native-google-signin",
+  "_nodeVersion": "5.12.0",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/react-native-google-signin-0.10.0.tgz_1491916221885_0.7921045497059822"
   },
+  "_npmUser": {
+    "name": "kerumen",
+    "email": "yann.pringault@gmail.com"
+  },
+  "_npmVersion": "4.2.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "react-native-google-signin@^0.10.0",
+    "scope": null,
+    "escapedName": "react-native-google-signin",
+    "name": "react-native-google-signin",
+    "rawSpec": "^0.10.0",
+    "spec": ">=0.10.0 <0.11.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-native-google-signin/-/react-native-google-signin-0.10.0.tgz",
+  "_shasum": "cc47d3726165735ee61e3a4a589c2ced888f1a98",
+  "_shrinkwrap": null,
+  "_spec": "react-native-google-signin@^0.10.0",
+  "_where": "/home/li8/witworks/phone-apps/BlinkDroid/react",
+  "author": {
+    "name": "devfd",
+    "email": "apptailor.co@gmail.com",
+    "url": "https://github.com/devfd"
+  },
+  "bugs": {
+    "url": "https://github.com/devfd/react-native-google-signin/issues"
+  },
+  "dependencies": {},
+  "description": "Google Signin for your react native applications",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "cc47d3726165735ee61e3a4a589c2ced888f1a98",
+    "tarball": "https://registry.npmjs.org/react-native-google-signin/-/react-native-google-signin-0.10.0.tgz"
+  },
+  "gitHead": "63b625d9e7c8b0e96ab7ecf068cba801d6b3b917",
+  "homepage": "https://github.com/devfd/react-native-google-signin",
   "keywords": [
     "react-component",
     "react-native",
@@ -17,17 +75,28 @@
     "ios",
     "android"
   ],
-  "author": {
-    "name": "devfd",
-    "email": "apptailor.co@gmail.com",
-    "url": "https://github.com/devfd"
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "devfd",
+      "email": "hello@devfd.me"
+    },
+    {
+      "name": "kerumen",
+      "email": "yann.pringault@gmail.com"
+    }
+  ],
+  "name": "react-native-google-signin",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "react": ">=15.4.0",
+    "react-native": ">=0.40"
   },
+  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
-    "url": "https://github.com/devfd/react-native-google-signin"
-  },
-  "bugs": {
-    "url": "https://github.com/devfd/react-native-google-signin/issues"
+    "url": "git+https://github.com/devfd/react-native-google-signin.git"
   },
   "rnpm": {
     "ios": {
@@ -40,6 +109,8 @@
       ]
     }
   },
-  "homepage": "https://github.com/devfd/react-native-google-signin",
-  "license": "MIT"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.10.0"
 }

@@ -4,14 +4,12 @@ Includes Google Sign-In SDK v4.0.0
 
 ### 1. Installation
 
-#### With RNPM
+#### Automatic
 
-- make sure you have rnpm version >= 1.9.0
-- link the lib with `rnpm link react-native-google-signin`
-- Drag and drop the `ios/GoogleSdk` folder to your xcode project. (Make sure `Copy items if needed` **IS** ticked)
+- link the lib with `react-native link react-native-google-signin`
+- install the Google Signin SDK with [CocoaPods](https://cocoapods.org/) (add `pod 'Google/SignIn'` in your Podfile and run `pod install`)
 
-
-#### Manual installation
+#### Manual
 
 - add `ios/RNGoogleSignin.xcodeproj` to your xcode project
 - In your project build phase -> `Link binary with libraries` step, add `libRNGoogleSignin.a`, `AddressBook.framework`, `SafariServices.framework`, `SystemConfiguration.framework` and `libz.tbd`
@@ -43,10 +41,10 @@ Add the end of this step, your Xcode config should look like this:
 
 ### Project setup
 
-Inside AppDelegate.m
-```
+Inside `AppDelegate.m`
+```objc
 // add this line before @implementation AppDelegate
-#import "RNGoogleSignin.h"
+#import <RNGoogleSignin/RNGoogleSignin.h>
 
 // add this method before @end
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url
@@ -55,4 +53,23 @@ Inside AppDelegate.m
   return [RNGoogleSignin application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
 }
 
-````
+```
+
+Only one `openURL` method can be defined, so if you have multiple listeners which should be defined (for instance if you have both Google and Facebook OAuth), you must combine them into a single function like so:
+
+```objc
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+
+  return [[FBSDKApplicationDelegate sharedInstance] application:application
+                                                        openURL:url
+                                              sourceApplication:sourceApplication
+                                                     annotation:annotation
+         ]
+         || [RNGoogleSignin application:application
+                                openURL:url
+                      sourceApplication:sourceApplication
+                             annotation:annotation
+            ];
+}
+```
