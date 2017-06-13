@@ -11,9 +11,30 @@
         "type": "range"
       },
       "/home/li8/witworks/phone-apps/BlinkDroid/react"
+    ],
+    [
+      {
+        "raw": "react-native-google-signin@github:witworks/react-native-google-signin",
+        "scope": null,
+        "escapedName": "react-native-google-signin",
+        "name": "react-native-google-signin",
+        "rawSpec": "github:witworks/react-native-google-signin",
+        "spec": "github:witworks/react-native-google-signin",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:witworks/react-native-google-signin.git",
+          "sshUrl": "git+ssh://git@github.com/witworks/react-native-google-signin.git",
+          "httpsUrl": "git+https://github.com/witworks/react-native-google-signin.git",
+          "gitUrl": "git://github.com/witworks/react-native-google-signin.git",
+          "shortcut": "github:witworks/react-native-google-signin",
+          "directUrl": "https://raw.githubusercontent.com/witworks/react-native-google-signin/master/package.json"
+        }
+      },
+      "/home/li8/witworks/phone-apps/BlinkDroid/react"
     ]
   ],
-  "_from": "react-native-google-signin@>=0.10.0 <0.11.0",
+  "_from": "witworks/react-native-google-signin",
   "_id": "react-native-google-signin@0.10.0",
   "_inCache": true,
   "_installable": true,
@@ -30,21 +51,30 @@
   "_npmVersion": "4.2.0",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "react-native-google-signin@^0.10.0",
+    "raw": "react-native-google-signin@github:witworks/react-native-google-signin",
     "scope": null,
     "escapedName": "react-native-google-signin",
     "name": "react-native-google-signin",
-    "rawSpec": "^0.10.0",
-    "spec": ">=0.10.0 <0.11.0",
-    "type": "range"
+    "rawSpec": "github:witworks/react-native-google-signin",
+    "spec": "github:witworks/react-native-google-signin",
+    "type": "hosted",
+    "hosted": {
+      "type": "github",
+      "ssh": "git@github.com:witworks/react-native-google-signin.git",
+      "sshUrl": "git+ssh://git@github.com/witworks/react-native-google-signin.git",
+      "httpsUrl": "git+https://github.com/witworks/react-native-google-signin.git",
+      "gitUrl": "git://github.com/witworks/react-native-google-signin.git",
+      "shortcut": "github:witworks/react-native-google-signin",
+      "directUrl": "https://raw.githubusercontent.com/witworks/react-native-google-signin/master/package.json"
+    }
   },
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/react-native-google-signin/-/react-native-google-signin-0.10.0.tgz",
-  "_shasum": "cc47d3726165735ee61e3a4a589c2ced888f1a98",
+  "_resolved": "git://github.com/witworks/react-native-google-signin.git#5a5483b9c13089a1d89b2f1b436f6627d7e31b8b",
+  "_shasum": "9d107f46d87aa0140267039a7861eada08697bb8",
   "_shrinkwrap": null,
-  "_spec": "react-native-google-signin@^0.10.0",
+  "_spec": "react-native-google-signin@github:witworks/react-native-google-signin",
   "_where": "/home/li8/witworks/phone-apps/BlinkDroid/react",
   "author": {
     "name": "devfd",
